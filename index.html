@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Songlist</title>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<form>
+	<label for="hot">Which song you want to choose? </label>
+		<select name="genres" id="genre">
+			<option value="Alternative/Indie">Alternative/Indie</option>
+			<option value="RnB">RnB</option>
+			<option value="pop rock">pop rock</option>
+			<option value="folk pop">folk pop</option>
+			<option value="progressive pop">progressive pop</option>
+			<option value="baroque pop">baroque pop</option>
+			<option value="Rock">Rock</option>
+  		</select>
+	<input style="display: inline;" type="button" value="Filter" onclick="filter_songs()">
+	</form>
+
+	<script language="javascript">
+	function filter_songs() {
+		var gen = document.getElementById('genre');
+		var genre_selected = gen.options[gen.selectedIndex].value;
+		$.get("https://realtobyfu.github.io/json-songlist/songlist.json", function( data ) {
+			strHTML = "<ul>";
+			data.forEach(function(song) { 
+				if (song.genre.includes(genre_selected)) {
+					strHTML +=
+					"<li>Title: " + song.title + "<br>"
+					+ "Artist: " + song.artist + "<br>"
+					+ "Genre: " + song.genre + "<br>"
+					+ "Year: " + song.year + "</li><br>";
+				}
+			}
+			) 
+			strHTML += "</ul><br>";
+			document.write(strHTML);
+		})
+	}
+	</script>
+</body>
+</html>

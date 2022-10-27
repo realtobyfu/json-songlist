@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Songlist</title>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<script language="javascript">
+	
+	$.get("https://realtobyfu.github.io/json-songlist/songlist.json",
+		/* Part II & III*/
+		function( data ) {
+			str = JSON.stringify(data);
+			document.write (str);
+			strHTML= "<ul>";
+			data.forEach(function(song) { 
+				strHTML +=
+				"<br><li>Title: " + song.title + "<br>"
+				+ "Artist: " + song.artist + "<br>"
+				+ "Genre: " + song.genre + "<br>"
+				+ "Year: " + song.year + "</li><br>";
+			}) 
+			strHTML += "</ul><br>";
+			document.write (strHTML);
+	})
+	</script>
+</body>
+</html>
