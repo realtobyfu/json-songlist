@@ -1,6 +1,5 @@
-{
-	"songs": [
-		{
+[
+	{
 		"title": "Yesterday",
 		"artist": "The Beatles",
 		"genre": "baroque pop",
@@ -66,5 +65,5 @@
 		"artist": "Lou Reed",
 		"genre": "baroque pop",
 		"year": "1972"
-	}]
-}
+	}
+]
