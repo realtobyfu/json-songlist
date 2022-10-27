@@ -1,0 +1,70 @@
+{
+	"songs": [
+		{
+		"title": "Yesterday",
+		"artist": "The Beatles",
+		"genre": "baroque pop",
+		"year": "1965"
+	},
+
+	{
+		"title": "Here Come The Sun",
+		"artist": "The Beatles",
+		"genre": ["folk-pop", "pop-rock"],
+		"year": "1969"
+	},
+	{
+		"title": "Penny Lane",
+		"artist": "The Beatles",
+		"genre": ["progressive pop", "baroque pop"],
+		"year": "1967"
+	},
+	{
+		"title": "Hey Jude",
+		"artist": "The Beatles",
+		"genre": ["RnB", "pop rock"],
+		"year": "1968"
+	},
+	{
+		"title": "Sittin Here in Silence (On My Own)",
+		"artist": "Oasis",
+		"genre": "Alternative/Indie",
+		"year": "2005"
+	},
+	{
+		"title": "Let There Be Love",
+		"artist": "Oasis",
+		"genre": "Alternative/Indie",
+		"year": "2005"
+	},
+	{
+		"title": "Under The Bridge",
+		"artist": "Red Hot Chilli Peppers",
+		"genre": "Alternative/Indie",
+		"year": "2005"
+	},
+	{
+		"title": "Californication",
+		"artist": "Red Hot Chilli Peppers",
+		"genre": "Alternative/Indie",
+		"year": "1999"
+	},
+	{
+		"title": "Baby Blue",
+		"artist": "Badfinger",
+		"genre": "Rock",
+		"year": "1971"
+	},
+	{
+		"title": "Walk On The Wild Side",
+		"artist": "Lou Reed",
+		"genre": "Rock",
+		"year": "1972"
+	},
+	{
+		"title": "Perfect Day",
+		"artist": "Lou Reed",
+		"genre": "baroque pop",
+		"year": "1972"
+	}]
+}
